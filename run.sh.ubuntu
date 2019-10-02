@@ -6,5 +6,5 @@ PATH=/bin:/usr/bin
 
 # Works 2019-09-30 Ubuntu 16
 sudo PATH=/bin:/usr/bin sh build.sh -mi386 -O ../build tools
-# Works 2019-09-30 Ubuntu 16
+# Fails 2019-09-30 Ubuntu 16
 sudo PATH=/bin:/usr/bin sh build.sh -mi386 -O ../build -U distribution 2>&1 | tee /tmp/minix.log &!
