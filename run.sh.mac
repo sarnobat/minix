@@ -1,7 +1,8 @@
 # On Mac
 
 # 2019-09 this works
-# 
+# <fill this in>
+# the build succeeds, but I can't get qemu installed on Mac OS X.
 
 #2019-09 doesn't work
 #PATH=/usr/bin:/bin/:/sbin/:/usr/sbin/:/usr/local/bin bash ./releasetools/x86_hdimage.sh
