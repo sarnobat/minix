@@ -6,5 +6,11 @@ PATH=/bin:/usr/bin
 
 # Works 2019-09-30 Ubuntu 16
 sudo PATH=/bin:/usr/bin sh build.sh -mi386 -O ../build tools
-# Fails 2019-09-30 Ubuntu 16
+# Fails 2019-09-30 Ubuntu 16 (because I was not using a RELEASE but the master)
 sudo PATH=/bin:/usr/bin sh build.sh -mi386 -O ../build -U distribution 2>&1 | tee /tmp/minix.log &!
+
+
+cd ~/trash/minix/src
+PATH=/bin:/usr/bin:/usr/local/bin sudo bash ./releasetools/x86_hdimage.sh
+
+qemu-system-i386 --enable-kvm -m 256 -hda minix_x86.img
